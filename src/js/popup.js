@@ -1728,7 +1728,7 @@ Logic.registerPanel(P_CONTAINER_EDIT, {
 
         if (typeof(proxyInfo.countryCode) === "undefined" && proxyInfo.type) {
           // Set custom proxy URL below 'Advanced proxy settings' button label
-          this.advancedProxyAddress.textContent = `${proxyInfo.type}://${proxyInfo.host}:${proxyInfo.port}`;
+          this.advancedProxyAddress.textContent = `${proxyInfo.type}://${proxyInfo.username}:${proxyInfo.password}@${proxyInfo.host}:${proxyInfo.port}`;
         }
       }
 
